@@ -4,7 +4,12 @@ const cors = require('cors');
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
+
+
+
+
  
+
 app.get('/user',(req,res)=>{
     const data = req.param('name') ;
     res.json({message :"hello "+ '' + data}) ;
