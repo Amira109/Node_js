@@ -5,7 +5,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-//write your code 
+
 app.get('/user',(req,res)=>{
     var n=req.params[0];
     var m=req.params[1] ;
